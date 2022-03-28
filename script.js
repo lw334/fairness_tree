@@ -164,7 +164,7 @@ var i = 0,
 var tree = d3.layout.tree().nodeSize([300, 80]);
 var diagonal = d3.svg.diagonal().projection(function (d) { return [d.x, d.y]; });
 
-var svg = d3.select("#body").append("svg").attr("width", 1000).attr("height", 1000)
+var svg = d3.select("#body").append("svg").attr("width", 800).attr("height", 1000)
     .call(zm = d3.behavior.zoom().scaleExtent([1,3]).on("zoom", redraw)).append("g")
     .attr("transform", "translate(" + 350 + "," + 20 + ")");
 
