@@ -10,15 +10,20 @@ height = 800 - margin.top - margin.bottom;
 var root =
     {
         "name": "Do you want to be fair by focusing on allocating interventions", "rule": "null", 
-        "left_link_explanation": "If you’re interviewing people for a job, you might want to have candidates in your applicant pool or selected for your interview stage \
-         from different racial groups or gender identities. It’s important to note that this does not enforce any criteria for how qualified the candidate should be for \
-         the job you’re interviewing them for. The Rooney Rule, adopted in 2003, is an NFL policy requiring every team with a head coaching vacancy to interview at least \
-         one or more diverse candidates. The goal of the policy is to ensure that minority coaches, especially African Americans, would be considered for high-level \
-         coaching positions. Equal Employment Opportunity Commission: selection rate for any race, sex, or ethnic group which is less than four-fifths (or 80%) \
-         of the rate for the group with the highest rate will generally be regarded by the Federal enforcement agencies as evidence of adverse impact, while \
-         a greater than four-fifths rate will generally not be regarded by Federal enforcement agencies as evidence of adverse impact. \
-         Specific instances of affirmative action can fall into this setting where there are quotas for people admitted to universities or \
-         elected to political office or on boards for publicly listed companies from specific groups (based on race, gender for example). ", 
+        "left_link_explanation": "This means that you want to be fair by ensuring that groups are represented similarly in your selection \
+        regardless of whether the intervention is approripate for them or not. Here are three examples of what this principal may look like \
+        when applied. (1) If you’re interviewing people for a job, you might want to have candidates in your applicant pool or selected for \
+        your interview stage from different racial groups or gender identities. It’s important to note that this does not enforce any criteria\
+         for how qualified the candidate should be for the job you’re interviewing them for. (2) The Rooney Rule, adopted in 2003, is an NFL \
+            policy requiring every team with a head coaching vacancy to interview at least one or more diverse candidates. \
+        The goal of the policy is to ensure that minority coaches, especially African Americans, would be considered for high-level \
+         coaching positions. (3) Equal Employment Opportunity Commission states that \"selection rate for any race, sex, or ethnic group \
+         which is less than four-fifths (or 80%) of the rate for the group with the highest rate will generally be regarded by \
+         the Federal enforcement agencies as evidence of adverse impact, while a greater than four-fifths rate will generally not be \
+         regarded by Federal enforcement agencies as evidence of adverse impact.\" (4) Specific instances of affirmative action can fall \
+         into this setting where there are quotas for people admitted to universities or elected to political office \
+         or on boards for publicly listed companies from specific groups (based on race, gender for example). ", 
+        
         "right_link_explanation": "States such as New Jersey and Kentucky have at one point or are currently using algorithmic risk assessment tools in their criminal justice systems. \
         If you have a set of individuals being evaluated for bail, you do not want to deny bail to individuals who are not a flight risk. \
         Secondly, you do not want to disproportionately deny bail to black individuals who are not a flight risk compared to white individuals who are not a flight risk. \
@@ -164,7 +169,7 @@ var i = 0,
 var tree = d3.layout.tree().nodeSize([300, 80]);
 var diagonal = d3.svg.diagonal().projection(function (d) { return [d.x, d.y]; });
 
-var svg = d3.select("#body").append("svg").attr("width", 800).attr("height", 1000)
+var svg = d3.select("#tree").append("svg").attr("width", 800).attr("height", 1000)
     .call(zm = d3.behavior.zoom().scaleExtent([1,3]).on("zoom", redraw)).append("g")
     .attr("transform", "translate(" + 350 + "," + 20 + ")");
 
@@ -333,11 +338,31 @@ function update(source) {
         d.x0 = d.x;
         d.y0 = d.y;
     });
+
+// var zoomfactor = 1;
+
+// var zoomlistener = d3.behavior.zoom()
+// .on("zoom", redraw);
+
+// d3.select("#zoomin").on("click", function (){
+//     console.log('zoomin');
+//     zoomfactor = zoomfactor + 0.2;
+//     zoomlistener.scale(zoomfactor).event(d3.select("#tree"));
+// });
+
+// d3.select("#zoomout").on("click", function (){
+//     zoomfactor = zoomfactor - 0.2;
+//     zoomlistener.scale(zoomfactor).event(d3.select("#tree"));
+// });
+
     
 }
 
 
 
+function zoomed() {
+    g.attr("transform", d3.event.transform);
+}
 
 // Toggle children on click.
 function click(d) {

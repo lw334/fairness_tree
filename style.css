@@ -1,5 +1,3 @@
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 .nav {
   background-color: #b00 !important;
@@ -10,8 +8,9 @@
 }
 
 .cmu-logo > img {
-  width: 300px;
-  max-width: 100%;
+  width: 350px;
+  max-width: 100%; 
+  margin: 10px 10px;
 }
 
 .navbar-brand {
@@ -23,53 +22,88 @@ svg{
     margin: auto;
 }
     
+/*.col-md-4, .col-md-8 {
+display:inline-block;
+width: 20%;
+}*/
+
 body{
     margin: 0px;
     background-color: #efefef;
-    font-family: 'Helvetica';
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
-    .node {
-        cursor: pointer;
+#tree {
+  background-color: #fff;
+  padding: 40px !important;
+  margin: auto;
+  margin-top:-10px;
+  margin-bottom: 40px;
+  /* min-height: calc(100vh - 200px); */
+ /* max-width: 600px;*/
+  max-width: 960px; 
+}
+
+#explanation {
+  background-color: #caebf2;
+  padding: 40px !important;
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  min-height: calc(100vh - 200px); 
+  min-width: 360px;
+  max-width: 360px;
+  /* max-width: 960px; */
+}
+
+.container {
+      display:flex;
     }
 
-        .node circle {
-            /*fill: #FFF;
-            stroke: steelblue;*/
-            stroke-width: 3px;
-        }
+.node {
+    cursor: pointer;
+}
 
-        .node text {
-            font: 12px Helvetica;
-            fill: black;
-            white-space: normal;
-            overflow: auto;
-            display: block;
-        }
-
-    path.link {
-      fill: none;
-      stroke: #ccc;
-      stroke-width: 1.5px;
+    .node circle {
+        /*fill: #FFF;
+        stroke: steelblue;*/
+        stroke-width: 3px;
     }
 
-    .link text {
-      font: 10px Helvetica;
-      fill: #CC0000;
-    }
-
-    .link {
-        cursor:  pointer;
-    }
-
-    .tree {
-        margin-bottom: 10px;
-        overflow: auto;
+    .node text {
+        font: 12px Helvetica;
+        fill: black;
         white-space: normal;
+        overflow: auto;
+        display: block;
     }
 
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
 
-    .p text{
-      font: 10px Helvetica;
-      fill: #CC0000;
-    }
+.link text {
+  font: 10px Helvetica;
+  fill: #CC0000;
+}
+
+.link {
+    cursor:  pointer;
+}
+
+.tree {
+    margin-bottom: 10px;
+    overflow: auto;
+    white-space: normal;
+}
+
+
+.p text{
+  font: 12px Helvetica;
+  fill: #CC0000;
+}
