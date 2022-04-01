@@ -38,7 +38,7 @@ body{
 #tree {
   background-color: #fff;
 /*  padding: 40px !important;*/
-  margin: auto;
+  margin: 0px;
 /*  margin-top:0px;*/
 /*  margin-bottom: 40px;*/
   /* min-height: calc(100vh - 200px); */
@@ -49,11 +49,11 @@ body{
 #explanation {
   background-color: #caebf2;
   padding: 10px !important;
-  margin: auto;
+  margin: 0px;
   margin-top: 0px;
-  margin-bottom: 40px;
+/*  margin-bottom: 40px;
   min-height: calc(100vh - 200px); 
-  min-width: 360px;
+  min-width: 360px;*/
 /*  max-width: 360px;*/
   white-space: pre-wrap;
   /* max-width: 960px; */
