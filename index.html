@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Fairness Tree</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/static/css/site.css" />
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -15,7 +15,7 @@
 
 
 <body>
-  <nav class="navbar bg-primary">
+  <nav class="navbar .bg-transparent">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1 cmu-logo display-4">
         <img src="static/img/cmu-wordmark-horizontal-w.png" alt=""/>
@@ -25,21 +25,32 @@
 
 
 
-
   <main>
-  <row>
-    <h3>Getting started</h3>
+  <row> 
+    <div class="container">  
+     <div class=".col-lg-12"> 
+    <h4>What is fairness tree?</h4>
+    <p> The fairness tree tool is developed by a group of researchers in machine learning and public policy at Carnegie Mellon University. <br>
+    The primary goal of the fairness tree tool is to guide users through the process of selecting the most suitable fairness criteria for their particular policy problem. It asks questions at different decision points and maps the answers to corresponding definitions of fairness. These fairness metrics ensure that individuals in one group are not discriminated against compared to other groups. </p>
+    <h4>Who should use it?</h4>
+    <p> The tool is particularly suitable for social services providers who want to use risk assessment tools to improve their service provision. It is designed for policy practitioners who are involved in developing risk assessment tools as well as community members whose lives will be impacted by such tools. </p>
+    <h4>Getting started</h4>
     <p>Begin from the top, answer each question from your perspective. You can click on each branch and read more explanation and examples about what it means to help you choose. If you encounter a question where you do not know how to choose, 1) provide feedback, elaborate on why you cannot choose; 2) after that, choose one option and continue with the flowchart until you reach an end. Go back to the question where you cannot decide, choose the alternative option, and continue with the flowchart until you reach another definition. Rank and pick which one you like better. 
     </p>
-  </row>  
+    <h4>Provide Feedback</h4>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBq_UVCKwLC8uH_xesWXuGGp6dJId3d1wh7Bt-wKeKHYdJNw/viewform">Please click here to provide feedbacks. It will take only 1 minute!</a>  
+    </div>
+  </div>
+  </row>
+  <br>  
   <row>
   <div class="container">  
-    <div class="col-md-4">
-      <h3>Explanation Here:</h3>
+    <div class="col-lg-5">
+      <p>Explanation</p>
       <div id="explanation"></div>
     </div>
-    <div class="col-md-8"> 
-      <h3>You can pan or double click to zoom in and click on the link and node texts to learn more</h3>
+    <div class=".col-lg-7"> 
+      <p>You can pan or double click to zoom in & click on the link and node texts to learn more</p>
       <div id="tree"></div>
     </div>
   </div>
