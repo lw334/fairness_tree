@@ -29,20 +29,13 @@ width: 20%;
 body{
     margin: 0px;
     background-color: #f2f2f2;
-/*    font-family: Helvetica;
-    font-size: 12px;*/
     font-weight: 400;
     line-height: 1.5;
 }
 
 #tree {
   background-color: #fff;
-/*  padding: 40px !important;*/
   margin: 0px;
-/*  margin-top:0px;*/
-/*  margin-bottom: 40px;*/
-  /* min-height: calc(100vh - 200px); */
- /* max-width: 600px;*/
   max-width: 960px; 
 }
 
@@ -51,12 +44,8 @@ body{
   padding: 10px !important;
   margin: 0px;
   margin-top: 0px;
-/*  margin-bottom: 40px;
-  min-height: calc(100vh - 200px); 
-  min-width: 360px;*/
-/*  max-width: 360px;*/
   white-space: pre-wrap;
-  /* max-width: 960px; */
+
 }
 
 .container {
@@ -68,8 +57,6 @@ body{
 }
 
     .node circle {
-        /*fill: #FFF;
-        stroke: steelblue;*/
         stroke-width: 3px;
     }
 
@@ -102,9 +89,3 @@ path.link {
     white-space: normal;
 }
 
-
-/*.p text{
-  font: 12px Helvetica;
-  fill: #CC0000;
-  white-space: pre-wrap;
-}*/
