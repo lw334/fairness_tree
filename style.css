@@ -45,16 +45,18 @@ body{
 }
 
 #tree {
-  background-color: #fff;
+  background-color: #f2f2f2;
   margin: 0px;
   max-width: 960px; 
+  border-style: solid;
 }
 
+
 #explanation {
-  background-color: #caebf2;
-  padding: 10px !important;
+  background-color: #f2f2f2;
   margin: 0px;
   margin-top: 0px;
+  padding-right: 25px;
   white-space: pre-wrap;
   min-width: 296px;
   min-height: 500px;
@@ -101,5 +103,6 @@ path.link {
     margin-bottom: 10px;
     overflow: auto;
     white-space: normal;
+    
 }
 
