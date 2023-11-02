@@ -5,6 +5,7 @@
 
 .container-fluid {
     background-color: #b00 !important;
+    padding: 15px;
 }
 
 .cmu-logo > img {
@@ -14,6 +15,15 @@
 
 .navbar-brand {
   color: rgba(255, 255, 255, 0.9) !important;
+  margin-left: 30px;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+h4 {
+  font-size:xx-large;
 }
 
 svg{
@@ -31,17 +41,23 @@ body{
     background-color: #f2f2f2;
     font-weight: 400;
     line-height: 1.5;
+    font-family: Helvetica, sans-serif;
 }
 
 #tree {
-  background-color: #fff;
+  background-color: #f2f2f2;
   margin: 0px;
   max-width: 960px; 
+  border-style: solid;
 }
 
+.tree_container {
+  margin-right: 30px;
+}
+
+
 #explanation {
-  background-color: #caebf2;
-  padding: 10px !important;
+  background-color: #f2f2f2;
   margin: 0px;
   margin-top: 0px;
   white-space: pre-wrap;
@@ -52,6 +68,7 @@ body{
 
 .container {
       display:flex;
+      margin: 35px;
     }
 
 .node {
@@ -89,5 +106,6 @@ path.link {
     margin-bottom: 10px;
     overflow: auto;
     white-space: normal;
+    
 }
 
