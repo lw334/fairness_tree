@@ -418,7 +418,7 @@ function click_linktext(d) {
     } else if ((d.source.children.length) == 4) {
        console.log(d.target.id % 4);
         if (d.target.id % 4 == 0) {
-            update_txt = d.source.middle_link_explanation;
+            update_txt = d.source.right_link_explanation;
         } else if  (d.target.id % 4 == 1) {
             update_txt = d.source.left_link_explanation;
         } else if (d.target.id % 4 == 3){
