@@ -416,16 +416,34 @@ function click_linktext(d) {
             update_txt = d.source.middle_link_explanation;
         }
     } else if ((d.source.children.length) == 4) {
-       console.log(d.target.id % 4);
-        if (d.target.id % 4 == 0) {
+       console.log(d.target.id)
+       // console.log(d.target.id % 4);
+       //  if (d.target.id % 4 == 0) {
+       //      update_txt = d.source.right_link_explanation;
+       //  } else if  (d.target.id % 4 == 3) {
+       //      update_txt = d.source.left_link_explanation;
+       //  } else if (d.target.id % 4 == 1){
+       //     update_txt = d.source.middle_right_link_explanation;
+       //  } else{
+       //    update_txt = d.source.middle_link_explanation;
+       //  }
+        if (d.target.id == 8 ) {
             update_txt = d.source.right_link_explanation;
-        } else if  (d.target.id % 4 == 1) {
-            update_txt = d.source.left_link_explanation;
-        } else if (d.target.id % 4 == 3){
-           update_txt = d.source.middle_right_link_explanation;
-        } else{
+        }  else if (d.target.id == 9) {
           update_txt = d.source.middle_link_explanation;
-        }
+        } else if (d.target.id == 10 ) {
+           update_txt = d.source.middle_right_link_explanation;
+        } else if  (d.target.id == 11 ) {
+            update_txt = d.source.left_link_explanation;
+        } else if  (d.target.id == 17 ) {
+            update_txt = d.source.left_link_explanation;
+        } else if  (d.target.id == 16 ) {
+            update_txt = d.source.middle_link_explanation;
+        } else if  (d.target.id == 15 ) {
+            update_txt = d.source.middle_right_link_explanation;
+        } else if  (d.target.id == 14 ) {
+            update_txt = d.source.right_link_explanation;
+        } 
     }
     d3.select("#explanation")
         .text(update_txt);
