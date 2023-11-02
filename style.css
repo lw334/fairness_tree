@@ -51,12 +51,15 @@ body{
   border-style: solid;
 }
 
+.tree_container {
+  margin-right: 30px;
+}
+
 
 #explanation {
   background-color: #f2f2f2;
   margin: 0px;
   margin-top: 0px;
-  padding-right: 25px;
   white-space: pre-wrap;
   min-width: 296px;
   min-height: 500px;
